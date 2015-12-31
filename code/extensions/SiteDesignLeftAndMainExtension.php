@@ -19,5 +19,4 @@ class SiteDesignLeftAndMainExtension extends LeftAndMainExtension
             CMSMenu::remove_menu_item('CMSSiteDesignController');
         }
     }
-
 }

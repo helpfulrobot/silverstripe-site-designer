@@ -171,5 +171,4 @@ class CMSSiteDesignController extends LeftAndMain
             ))
         ));
     }
-
 }

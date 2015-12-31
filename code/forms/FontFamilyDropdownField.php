@@ -80,5 +80,4 @@ class FontFamilyDropdownField extends DropdownField
         }
         return false;
     }
-
 }

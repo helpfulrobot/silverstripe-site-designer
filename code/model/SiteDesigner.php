@@ -78,7 +78,7 @@ class SiteDesigner extends DataObject implements TemplateGlobalProvider
     /**
      * @return DataObject|SiteConfig
      */
-    static public function current_site_designer()
+    public static function current_site_designer()
     {
         if ($siteDesigner = DataObject::get_one('SiteDesigner')) {
             return $siteDesigner;
@@ -104,7 +104,7 @@ class SiteDesigner extends DataObject implements TemplateGlobalProvider
      *
      * @return SiteConfig
      */
-    static public function make_site_designer()
+    public static function make_site_designer()
     {
         /** @var SiteDesigner $config */
         $config = SiteDesigner::create();
@@ -139,5 +139,4 @@ class SiteDesigner extends DataObject implements TemplateGlobalProvider
             'SiteDesigner' => 'current_site_designer',
         );
     }
-
 }
